@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+   
+    <!--                        HEADER SHID
+        DOCTYPE:            weird legacy thing, html is old
+        lang:               sets language the majority of the page is gonna be
+        charset:            sets which characters are able to be used, basically always use utf-8
+        name / content:     sets how the page is formatted in the device, make sure don't have to scroll sideways or something
+        title:              what the page name is on the tab within the browser
+
+     -->
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name = 'viewport' content = 'width-device-width' />
+        <title>banan</title>
+    </head>
+    
+    <!-- h1 is most bold, gets less big as you go higher -->
+    <body>
+        <h1>HUMMINA HUMMINA HUMMINA HUMMINA</h1>
+
+        <h2>HEY LOOK AT THIS WEIRD BANANA THING</h2>
+
+        <h3>why he look like that</h3>
+
+        <h4>i found him on ebay</h4>
+
+        
+        <!--                                IMAGE SHID
+
+            alt:                for people who might access the page and can't look at the image
+            height and width:   good to include even if the image is fine already
+            title:              displays info if you hover over the image, generally shouldnt use bc people navigating w/out mouse
+            width/height:       size of image
+            blockquote:         a little indented chunk of text
+              
+        -->
+        <img 
+            src = "images/nanner-dude.jpeg" 
+            alt = "weird reggae banana dude from ebay"       
+            width = '600'
+            height = '300'
+            title = 'he high as fuck lmfao'    
+            />
+        
+        <blockquote>
+            <!-- <br> == \n -->
+            this is a blockquote i have no clue what it does <br> 
+            oh hey its like indented under the image
+        </blockquote>
+        
+        <img 
+            src = 'https://raw.githubusercontent.com/mdn/learning-area/master/html/multimedia-and-embedding/images-in-html/dinosaur_small.jpg'
+            alt = 'thing the website told me to add'
+            title = 'boner alert !' 
+            />
+
+        <blockquote>
+            rawr
+        </blockquote>
+
+        <!-- BETTER CONVENTION FOR IMAGES: figure
+            wraps the media so you can't accidentally assign a sentence or something to another image
+            should be used for literally all media it looks like
+        -->
+        <figure>
+            <img 
+                src = "images/nanner-dude.jpeg" 
+                alt = "weird reggae banana shitter from ebay"       
+                width = '600'
+                height = '300'
+                title = 'he high as fuck lmfao'    
+            />
+            <figcaption>
+                this is a figcaption lets see if its different to the other fun bodies of text
+                <br>
+                oh hey it looks like it aligns stuff right under the image what if i make this text really long is it gonna start a new line right 
+                under the image or keep going beyond it <br> damn thats unfortunate at least it indents the picture that looks better than the others
+            </figcaption>
+        </figure>
+        
+
+        <p>My cat is <strong>very</strong> grumpy</p>
+
+        <p>
+            The FitnessGram™ Pacer Test is a multistage aerobic capacity test that progressively gets more difficult 
+            as it continues. The 20 meter pacer test will begin in 30 seconds. Line up at the start. The running speed
+             starts slowly, but gets faster each minute after you hear this signal. [beep] A single lap should be 
+             completed each time you hear this sound. [ding] Remember to run in a straight line, and run as long as 
+             possible. The second time you fail to complete a lap before the sound, your test is over. The test will
+              begin on the word start. On your mark, get ready, start.
+        </p>
+
+        <ul>
+            <li>a</li>
+            <li>b</li>
+            <li>c</li>
+            <li>d</li>
+        </ul>
+
+        <a 
+            href = "https://github.com/RyanKoeninger/RyanKoeninger">
+            heres my github for no apparent reason
+        </a>
+        <br>
+
+        <!--                      VIDEO SHID         
+            
+            controls:       sets how user controls the video, leaving it blank defaults to browser built-in controls
+            paragraph:      displays if video doesn't load for whatever reason
+            
+            also takes width and height, and 
+            
+            poster:         displays an image url before the user plays the video
+            
+            
+            SUBTITLES / CAPTIONS:
+            - uses WebVTT format
+            - save .vtt file somewhere, then add using normal convention
+        
+        -->
+
+        <!-- <video>
+            <source 
+            src = 'videos/paxi.mp4' 
+            type = 'video/mp4'
+            height = '500'
+            width = '300'
+            controls
+            autoplay
+            loop
+            preload = 'auto' 
+            > -->
+
+            <!-- <track 
+            kind = 'subtitles' 
+            src = 'subtitles_es.vtt' 
+            srclang="es" 
+            label="Spanish"
+            > -->
+
+            <!-- <p>
+                haha loser can't even load a video <br>
+                here take a <a href = 'rabbit320.webm'> link </a>
+            </p> -->
+        <!-- </video> -->
+
+    <!--                        AUDIO SHID
+
+        same as video but doesn't have a visual aspect so things like width or poster don't do anything
+        
+    -->
+        <table>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <th>what</th>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+              <th>Data 1</th>
+              <th style="background-color: rgb(255, 255, 0)">Data 2</th>
+            </tr>
+            <tr>
+              <td>Calcutta</td>
+              <td style="background-color: yellow">Orange</td>
+            </tr>
+            <tr>
+              <td>Robots</td>
+              <td style="background-color: yellow">Jazz</td>
+            </tr>
+          </table>
+
+          <table>
+            <colgroup>
+                <col />
+                <col />
+                <col style="background-color: #97DB9A;"/>
+                <col />
+                <col style="background-color: #97DB9A;"/>
+                <col style="background-color: #DCC48E; border:4px solid #31437A;" />
+                <col style="width: 42px;" span = 2 />
+            </colgroup>
+
+            <tr>
+                <td></td>
+                <th>Mon</th>
+                <th>Tues</th>
+                <th>Wed</th>
+                <th>Thurs</th>
+                <th>Fri</th>
+                <th>Sat</th>
+                <th>Sun</th>
+            </tr>
+
+            <tr>
+                <th>1st period</th>
+                <td>English</td>
+                <td></td>
+                <td></td>
+                <td>German</td>
+                <td>Dutch</td>
+            </tr>
+
+            <tr>
+                <th>2nd period</th>
+                <td>English</td>
+                <td>English</td>
+                <td></td>
+                <td>German</td>
+                <td>Dutch</td>
+            </tr>
+
+            <tr>
+                <th>3rd period</th>
+                <td></td>
+                <td>German</td>
+                <td></td>
+                <td>German</td>
+                <td>Dutch</td>
+            </tr>
+
+            <tr>
+                <th>4th period</th>
+                <td></td>
+                <td>English</td>
+                <td></td>
+                <td>English</td>
+                <td>Dutch</td>
+            </tr>
+          </table>
+
+
+    </body>
+
+</html>
+
+
+
+
+<!--
+     -------  T A K E A W A Y S  --------
+    - focus on accessibility when it comes to media
+    - add elements with the expectation that someone may not be able to see them
+    - copyright is an issue with media: 
+        - all rights reserved: have to get permission / pay to use media
+        - permissive: less strict rules but still need to follow them
+        - public domain: free !
+
+    - CSS images are easier to work with but can't contain the same info as HTML images so
+        use HTML if the image is important to content and CSS if its just for decoration
+    -->
+
+
